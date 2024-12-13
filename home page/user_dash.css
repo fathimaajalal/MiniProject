@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Ensured font-family is set here */
+  background-color: #fff;
+}
+
+/* General h2 styles */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px; /* Adjust the size as needed */
+  color: #000; /* Black color for headings */
+  text-transform: uppercase; /* Capitalize headings */
+  position: relative; /* Needed for ::after positioning */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%; /* Adjust the width as needed */
+  height: 2px;
+  background-color: red;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  width: 100%; /* Adjusted to full width */
+  margin: auto;
+}
+
+/* Navigation styles */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  height: 110vh;
+  background: rgb(140, 7, 7);
+  color: #F4F1F1;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+
+ul {
+  margin: 0 auto;
+}
+
+li {
+  padding-bottom: 2rem;
+}
+
+li a {
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 16px;
+  color: #F4F1F1;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+nav i {
+  width: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Section visibility */
+.section {
+  display: none;
+  flex: 1; /* Ensure sections take available space */
+}
+
+.section.active {
+  display: block;
+}
+
+/* Dashboard Section Styling */
+#dashboard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+#profile {
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  flex: 1; /* Take up full space beside the sidebar */
+  display: flex; /* Centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+/* Wishlist Section Styles */
+.wishlist-container-wrapper {
+  background-color: white; /* Background color for the floating container */
+  padding: 30px; /* Padding inside the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 100%; /* Full width for the container */
+  margin: 40px 0; /* Center the container with margin */
+  flex: 1; /* Fill the entire space beside the navbar */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.wishlist-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0; /* Padding around wishlist items */
+}
+
+
+
+.remove-button {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  color: red;
+  font-size: 16px;
+  text-decoration: none;
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+.remove-button:hover {
+  color: darkred; /* Change color on hover */
+}
+
+
+.wishlist-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.wishlist-product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Wishlist item h2 with underline on hover */
+.wishlist-item h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+  position: relative; /* Required for ::after positioning */
+  padding-bottom: 5px;
+}
+
+.wishlist-item h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0; /* Initially no width */
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease-in-out;
+}
+
+.wishlist-item h2:hover::after {
+  width: 50%; /* Show underline on hover */
+}
+
+.wishlist-container-wrapper {
+  background-color: white; /* Background color for the floating container */
+  padding: 30px; /* Padding inside the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px; /* Max width for the container */
+  margin: 40px auto; /* Center the container with margin */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.wishlist-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0; /* Padding around wishlist items */
+}
+
+.wishlist-item {
+  background-color: #f9f9f9; /* Background for wishlist items */
+  border: 1px solid #ddd; /* Border for items */
+  border-radius: 10px; /* Rounded corners for items */
+  padding: 20px;
+  text-align: center;
+  width: 250px; /* Fixed width for each item */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+  transition: transform 0.3s ease; /* Animation effect */
+}
+
+.wishlist-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.price {
+  font-size: 16px;
+  color: #000;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.general-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Advertisements Section Styles */
+.ads-container-wrapper {
+  background-color: white; /* Background color for the floating container */
+  padding: 30px; /* Padding inside the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px; /* Max width for the container */
+  margin: 40px auto; /* Center the container with margin */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.ads-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0; /* Padding around advertisement items */
+}
+
+.ad-item {
+  background-color: #f9f9f9; /* Background for ad items */
+  border: 1px solid #ddd; /* Border for items */
+  border-radius: 10px; /* Rounded corners for items */
+  padding: 20px;
+  text-align: center;
+  width: 250px; /* Fixed width for each item */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+  transition: transform 0.3s ease; /* Animation effect */
+}
+
+.ad-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.ad-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* Rounded corners for images */
+}
+
+/* Ad item h3 with underline on hover */
+.ad-item h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+  position: relative; /* Required for ::after positioning */
+  padding-bottom: 5px;
+}
+
+.ad-item h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0; /* Initially no width */
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease-in-out;
+}
+
+.ad-item h3:hover::after {
+  width: 50%; /* Show underline on hover */
+}

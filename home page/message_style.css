@@ -1,0 +1,86 @@
+/* Chat Container */
+#chat-container {
+    width: 300px;
+    height: 500px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Messages Area */
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 10px; /* Ensure no overlap with scroll */
+}
+
+/* Individual Message */
+.message {
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 8px;
+    max-width: 80%;
+    line-height: 1.4;
+    position: relative;
+}
+
+/* User Message */
+.message.user {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Other Messages */
+.message.other {
+    background-color: #e1e1e1;
+    color: #333;
+    align-self: flex-start;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* Message Input */
+#message-input {
+    width: calc(100% - 90px); /* Adjusted for send button */
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 14px;
+}
+
+/* Input Placeholder */
+#message-input::placeholder {
+    color: #aaa;
+}
+
+/* Send Button */
+#send-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}

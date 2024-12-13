@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("pexels-zeynep-sude-emek-193601188-18234060.jpg");
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="file"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button[type="button"] {
+    background-color: #007bff;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Preview Section */
+  .preview-section {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .preview-section h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .preview-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .preview-section p strong {
+    color: #000;
+  }
+  .terms {
+    background-color: #fefefe; /* Light background */
+    border: 1px solid #e6e6e6; /* Light border */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}

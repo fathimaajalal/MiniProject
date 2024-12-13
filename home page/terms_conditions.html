@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .terms-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-family: 'Poppins', sans-serif;
+
+            text-align: center;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #e60000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="terms-container">
+        <h1>Terms and Conditions</h1>
+        <p>Please read and accept the following terms and conditions before proceeding:</p>
+        <ul>
+            <li>The product should be clean and in good condition.</li>
+            <li>Electronics must be fully functional and include necessary accessories.</li>
+            <li>All items should be safe and appropriate for donation.</li>
+            <li>All items should comply with our platform’s policies.</li>
+            <li>If a faulty product or appliance is sold, actions such as partial refunds or product exchanges may be enforced.</li>
+            <li>Intentional attempts to cheat or sell defective items will result in serious disciplinary actions.</li>
+        </ul>
+        <button id="proceed-button" onclick="proceedToPage()">Proceed</button>
+    </div>
+    
+    
+    <script>
+        function proceedToPage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const redirectUrl = urlParams.get('redirect');
+            if (redirectUrl) {
+                window.location.href = redirectUrl;
+            }
+        }
+    </script>
+</body>
+</html>

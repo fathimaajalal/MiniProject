@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="d_reg_style.css" />
+</head>
+<body>
+    <div class="container">
+      <h1 class="form-title">Registration</h1>
+
+<!-- ----------------- FORM BEGIN -----------------  -->
+
+     <form onsubmit="return validateForm()" action="register_database.php" method="post" >
+        <div class="main-user-info">
+
+          <div class="user-input-box">
+            <label for="firstname">Full Name</label>
+              <input type="text"
+                      id="firstname"
+                      name="firstname"
+                      placeholder="Enter Full Name" 
+                      required/>
+          </div>
+          <div class="user-input-box">
+            <label for="regno">Register Number</label>
+              <input type="text"
+                      id="regno"
+                      name="regno"
+                      placeholder="Eg., 22UBC129" 
+                      onkeyup = "checkRegNo()" 
+                      required/>
+
+                      <p style='color:red;font-size:12px' id='user-warn'></p>
+          </div>
+
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+              <input type="text"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      placeholder="Enter a 10 digit phone number"
+                      />
+                      <p style='color:red;font-size:12px' id='user-warn'></p>
+          </div>
+
+          <div class="user-input-box">
+            <label for="passwords">Password</label>
+              <input type="password"
+                      id="passwords"
+                      name="passwords"
+                      placeholder="Enter Password"
+                      required/>
+          </div>
+
+          <div class="user-input-box">
+            <label for="confirmPassword">Confirm Password</label>
+              <input type="password"
+                      id="confirmPassword"
+                      name="confirmPassword"
+                      placeholder="Confirm Password"
+                      required/>
+          </div>
+
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" id="submit" name="submit" value="Register" >
+        </div>
+      </form>
+
+    </div>
+  </body>
+</html>

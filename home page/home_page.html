@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site</title>
+    <link rel="stylesheet" href="home_style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="search.css"/>
+	<!-- <link rel="stylesheet" href="chatgpt_categoerisstyle.css"/> -->
+</head>
+<body>
+    <!-- Header Section -->
+
+
+    <div class="parent-container">
+
+        <!-- Navigation Links -->
+        <a href="main_menubar.html">Dashboard</a>
+        <!-- <a href="#home">Home</a> -->
+            <div class="dropdown_menu">
+                <a href="#categories">Categories</a>
+                <div class="dropdown-content">
+                    <a href="products_cat.php?category=Electronics">Electronics</a>
+                    <a href="products_cat.php?category=Hostel%20Materials">Hostel Materials</a>
+                    <a href="products_cat.php?category=Study%20Materials">Study Materials</a>
+                    <a href="products_cat.php?category=Stationary">Stationary</a>
+                </div>
+            </div>
+          
+          <div class="dropdown_menu">
+            <a href="#login">Login</a>
+            <div class="dropdown-content">
+              <a href="login/login.php">Log In</a>
+              <a href="registration/registration.php">Sign Up</a>
+              <!-- <a href="#">Profile</a> -->
+            </div>
+          </div>
+    
+        <!-- <a href="#contact">Contact</a> -->
+        <a href="seller_page.php" class="sell-button">+ SELL</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <form action="https://www.google.com/search" class="search" id="search-bar">
+                <input type="search" placeholder="Type something..." name="q" class="search__input">
+                <div class="search__button" id="search-button">
+                    <i class="ri-search-2-line search__icon"></i>
+                    <i class="ri-close-line search__close"></i>
+                </div>
+            </form>
+        </div>
+
+        <div class="background-image" style="background-image: url('home_pic.jpg');"></div>
+        <h1>Welcome to Connect at Marian! :)</h1>
+    </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="study_lamp.jpg" alt="Product 2">
+                    <h3>Study Lamp</h3>
+                    <p style="color: #666; font-size: 14px;">Adjustable study lamp.</p>
+                    <p>Rs. 399</p>
+                    <button>View Product</button>
+                </div>
+                <div class="product">
+                    <img src="bt_headphones.jpeg" alt="Product 3">
+                    <h3>Bluetooth Headphones</h3>
+                    <p style="color: #666; font-size: 14px;">JBL headphones with great sound.</p>
+                    <p>Rs. 3500</p>
+                    <button>View Product</button>
+                </div>
+                <div class="product">
+                    <img src="lap_bag.webp" alt="Product 4">
+                    <h3>Laptop Bag</h3>
+                    <p style="color: #666; font-size: 14px;">Durable bag for your laptop.</p>
+                    <p>Rs. 350</p>
+                    <button>View Product</button>
+                </div>
+                <div class="product">
+                    <img src="smartwatch.webp" alt="New Product 1">
+                    <h3>Smartwatch</h3>
+                    <p style="color: #666; font-size: 14px;">Latest Samsung Watch.</p>
+                    <p>Rs. 20000</p>
+                    <button>View Product</button>
+                </div>
+                <div class="product">
+                    <img src="iphone12.jpg" alt="Product 1">
+                    <h3>iPhone 12</h3>
+                    <p style="color: #666; font-size: 14px;"> Moderately used phone.</p>
+                    <p>Rs. 25000</p>
+                    <button>View Product</button>
+                </div>
+            </div>
+        </section>
+
+<section class="shop-by-category">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+        <div class="category-item">
+            <img src="electronics.jpg" alt="Electronics">
+            <h3><a href="products_cat.php?category=Electronics">Electronics</a></h3>
+        </div>
+        <div class="category-item">
+            <img src="study_materials.jpg" alt="Study Materials">
+            <h3> <a href="products_cat.php?category=Study%20Materials">Study Materials</a></h3>
+        </div>
+        <div class="category-item">
+            <img src="hostel_materials.jpg" alt="Hostel Materials">
+            <h3><a href="products_cat.php?category=Hostel%20Materials">Hostel Materials</a></h3>
+        </div>
+        <div class="category-item">
+            <img src="stationary.jpg" alt="Stationary">
+            <h3><a href="products_cat.php?category=Stationary">Stationary</a></h3>
+        </div>
+    </div>
+</section>
+
+<!-- New Launches Section -->
+<section class="new-launches">
+    <h2>New Launches</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="smartwatch.webp" alt="New Product 1">
+            <h3>Smartwatch</h3>
+            <p>Rs. 20000</p>
+            <button>View Product</button>
+        </div>
+        <div class="product">
+            <img src="sc_calculator.jpg" alt="New Product 2">
+            <h3>Scientific Calculator</h3>
+            <p>Rs. 500</p>
+            <button>View Product</button>
+        </div>
+        <div class="product">
+            <img src="whiteboard.webp" alt="New Product 3">
+            <h3>White Board</h3>
+            <p>Rs. 900</p>
+            <button>View Product</button>
+        </div>
+        <div class="product">
+            <img src="desk.jpg" alt="Foldable Study Desk">
+            <h3>Foldable Study Desk</h3>
+            <p>Rs. 1800</p>
+            <button>View Product</button>
+        </div>
+        <div class="product">
+            <img src="study_lamp.jpg" alt="Product 2">
+            <h3>Study Lamp</h3>
+            <p>Rs. 399</p>
+            <button>View Product</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Call to Action Section -->
+    <section class="call-to-action">
+        <h2>Sign up for our Website</h2>
+        <p>Get exclusive deals and Products</p>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Shopping Site</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
